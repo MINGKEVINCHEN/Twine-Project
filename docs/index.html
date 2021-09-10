@@ -3,39 +3,60 @@
 <head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1" name="viewport">
-<title>Good Hunting (img+audio)</title>
+<title>Good Hunting (img+audio + text)</title>
 <style title="Twine CSS">@keyframes appear{0%{opacity:0}to{opacity:1}}@keyframes fade-in-out{0%,to{opacity:0}50%{opacity:1}}@keyframes rumble{25%{top:-0.1em}75%{top:0.1em}0%,to{top:0px}}@keyframes shudder{25%{left:0.1em}75%{left:-0.1em}0%,to{left:0px}}@keyframes buoy{25%{top:0.25em}75%{top:-0.25em}0%,to{top:0px}}@keyframes sway{25%{left:0.25em}75%{left:-0.25em}0%,to{left:0px}}@keyframes pulse{0%{transform:scale(0, 0)}20%{transform:scale(1.2, 1.2)}40%{transform:scale(0.9, 0.9)}60%{transform:scale(1.05, 1.05)}80%{transform:scale(0.925, 0.925)}to{transform:scale(1, 1)}}@keyframes zoom-in{0%{transform:scale(0, 0)}to{transform:scale(1, 1)}}@keyframes shudder-in{0%, to{transform:translateX(0em)}5%, 25%, 45%{transform:translateX(-1em)}15%, 35%, 55%{transform:translateX(1em)}65%{transform:translateX(-0.6em)}75%{transform:translateX(0.6em)}85%{transform:translateX(-0.2em)}95%{transform:translateX(0.2em)}}@keyframes rumble-in{0%, to{transform:translateY(0em)}5%, 25%, 45%{transform:translateY(-1em)}15%, 35%, 55%{transform:translateY(1em)}65%{transform:translateY(-0.6em)}75%{transform:translateY(0.6em)}85%{transform:translateY(-0.2em)}95%{transform:translateY(0.2em)}}@keyframes fidget{0%, 8.1%, 82.1%, 31.1%, 38.1%, 44.1%, 40.1%, 47.1%, 74.1%, 16.1%, 27.1%, 72.1%, 24.1%, 95.1%, 6.1%, 36.1%, 20.1%, 4.1%, 91.1%, 14.1%, 87.1%, to{left:0px;top:0px}8%, 82%, 31%, 38%, 44%{left:-1px}40%, 47%, 74%, 16%, 27%{left:1px}72%, 24%, 95%, 6%, 36%{top:-1px}20%, 4%, 91%, 14%, 87%{top:1px}}@keyframes slide-right{0%{transform:translateX(-100vw)}}@keyframes slide-left{0%{transform:translateX(100vw)}}@keyframes slide-up{0%{transform:translateY(100vh)}}@keyframes slide-down{0%{transform:translateY(-100vh)}}@keyframes fade-right{0%{opacity:0;transform:translateX(-1em)}to{opacity:1}}@keyframes fade-left{0%{opacity:0;transform:translateX(1em)}to{opacity:1}}@keyframes fade-up{0%{opacity:0;transform:translateY(1em)}to{opacity:1}}@keyframes fade-down{0%{opacity:0;transform:translateY(-1em)}to{opacity:1}}@keyframes flicker{0%,29%,31%,63%,65%,77%,79%,86%,88%,91%,93%{opacity:0}30%{opacity:0.2}64%{opacity:0.4}78%{opacity:0.6}87%{opacity:0.8}92%, to{opacity:1}}@keyframes blur{0%{filter:blur(2rem);opacity:0}25%{opacity:1}to{filter:blur(0rem);opacity:1}}.dom-debug-mode tw-story,.dom-debug-mode tw-passage,.dom-debug-mode tw-sidebar,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{outline:1px solid #f5a3da;min-height:32px;display:block !important}.dom-debug-mode tw-story::before,.dom-debug-mode tw-passage::before,.dom-debug-mode tw-sidebar::before,.dom-debug-mode tw-include::before,.dom-debug-mode tw-hook::before,.dom-debug-mode tw-expression::before,.dom-debug-mode tw-link::before,.dom-debug-mode tw-dialog::before,.dom-debug-mode tw-columns::before,.dom-debug-mode tw-column::before,.dom-debug-mode tw-align::before{position:absolute;top:0;left:0;height:16px;background-color:#f5a3da;color:black;font-size:16px;font-weight:normal;font-style:normal;font-family:monospace;display:inline-block;line-height:100%;white-space:pre;z-index:999997}.dom-debug-mode tw-story:hover,.dom-debug-mode tw-passage:hover,.dom-debug-mode tw-sidebar:hover,.dom-debug-mode tw-include:hover,.dom-debug-mode tw-hook:hover,.dom-debug-mode tw-expression:hover,.dom-debug-mode tw-link:hover,.dom-debug-mode tw-dialog:hover,.dom-debug-mode tw-columns:hover,.dom-debug-mode tw-column:hover,.dom-debug-mode tw-align:hover{outline:1px solid #fc9}.dom-debug-mode tw-story:hover::before,.dom-debug-mode tw-passage:hover::before,.dom-debug-mode tw-sidebar:hover::before,.dom-debug-mode tw-include:hover::before,.dom-debug-mode tw-hook:hover::before,.dom-debug-mode tw-expression:hover::before,.dom-debug-mode tw-link:hover::before,.dom-debug-mode tw-dialog:hover::before,.dom-debug-mode tw-columns:hover::before,.dom-debug-mode tw-column:hover::before,.dom-debug-mode tw-align:hover::before{background-color:#fc9;transition:background-color 1s}.dom-debug-mode tw-passage,.dom-debug-mode tw-include,.dom-debug-mode tw-hook,.dom-debug-mode tw-expression,.dom-debug-mode tw-link,.dom-debug-mode tw-dialog,.dom-debug-mode tw-columns,.dom-debug-mode tw-column,.dom-debug-mode tw-align{padding:1em;margin:0}.dom-debug-mode tw-story::before{content:'<tw-story tags="' attr(tags) '">'}.dom-debug-mode tw-passage::before{top:-16px;content:'<tw-passage tags="' attr(tags) '">'}.dom-debug-mode tw-sidebar::before{top:-16px;content:"<tw-sidebar>"}.dom-debug-mode tw-hook::before{content:'<tw-hook name="' attr(name) '">'}.dom-debug-mode tw-expression::before{content:'<tw-expression name="' attr(name) '">'}.dom-debug-mode tw-link::before{content:'<tw-link name="' attr(name) '">'}.dom-debug-mode tw-dialog::before{content:"<tw-dialog>"}.dom-debug-mode tw-columns::before{content:"<tw-columns>"}.dom-debug-mode tw-column::before{content:"<tw-column>"}.dom-debug-mode tw-align::before{content:"<tw-align>"}.dom-debug-mode tw-include::before{content:'<tw-include type="' attr(type) '" title="' attr(title) '">'}.debug-mode tw-expression{display:inline-block !important}.debug-mode tw-expression[type=variable]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"$" attr(name)}.debug-mode tw-expression[type=tempVariable]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"_" attr(name)}.debug-mode tw-expression[return=boolean]{background-color:rgba(179,179,179,0.2)}.debug-mode tw-expression[return=array]{background-color:rgba(255,102,102,0.2)}.debug-mode tw-expression[return=dataset]{background-color:rgba(255,128,0,0.2)}.debug-mode tw-expression[return=number]{background-color:rgba(255,179,102,0.2)}.debug-mode tw-expression[return=datamap]{background-color:rgba(255,255,102,0.2)}.debug-mode tw-expression[return=changer]{background-color:rgba(179,255,102,0.2)}.debug-mode tw-expression[return=lambda]{background-color:rgba(102,255,102,0.2)}.debug-mode tw-expression[return=hookname]{background-color:rgba(102,255,204,0.2)}.debug-mode tw-expression[return=string]{background-color:rgba(102,255,255,0.2)}.debug-mode tw-expression[return=datatype]{background-color:rgba(102,153,255,0.2)}.debug-mode tw-expression[return=gradient],.debug-mode tw-expression[return=colour]{background-color:rgba(204,102,255,0.2)}.debug-mode tw-expression[return=instant],.debug-mode tw-expression[return=macro]{background-color:rgba(240,117,199,0.2)}.debug-mode tw-expression[return=command]{background-color:rgba(153,153,255,0.2)}.debug-mode tw-expression.false{background-color:rgba(255,0,0,0.2) !important}.debug-mode tw-expression[type=macro]::before{content:"(" attr(name) ":)";padding:0 0.5rem;font-size:1rem;vertical-align:middle;line-height:normal;background-color:inherit;border:1px solid rgba(255,255,255,0.5)}.debug-mode tw-hook{background-color:rgba(0,85,255,0.1) !important}.debug-mode tw-hook::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"["}.debug-mode tw-hook::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"]"}.debug-mode tw-hook[name]::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"]<" attr(name) "|"}.debug-mode tw-pseudo-hook{background-color:rgba(255,170,0,0.1) !important}.debug-mode tw-collapsed::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"{"}.debug-mode tw-collapsed::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"}"}.debug-mode tw-verbatim::before,.debug-mode tw-verbatim::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:"`"}.debug-mode tw-align[style*="text-align: center"]{background:linear-gradient(to right, rgba(255,204,189,0) 0%, rgba(255,204,189,0.25) 50%, rgba(255,204,189,0) 100%)}.debug-mode tw-align[style*="text-align: left"]{background:linear-gradient(to right, rgba(255,204,189,0.25) 0%, rgba(255,204,189,0) 100%)}.debug-mode tw-align[style*="text-align: right"]{background:linear-gradient(to right, rgba(255,204,189,0) 0%, rgba(255,204,189,0.25) 100%)}.debug-mode tw-column{background-color:rgba(189,228,255,0.2)}.debug-mode tw-enchantment{animation:enchantment 0.5s infinite;border:1px solid}.debug-mode tw-link::after,.debug-mode tw-broken-link::after{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:attr(passage-name)}.debug-mode tw-include{background-color:rgba(204,128,51,0.1)}.debug-mode tw-include::before{font-size:0.8rem;padding-left:0.2rem;padding-right:0.2rem;vertical-align:top;content:attr(type) ' "' attr(title) '"'}@keyframes enchantment{0%,to{border-color:#ffb366}50%{border-color:#6fc}}tw-debugger{position:fixed;box-sizing:border-box;bottom:0;right:0;z-index:999999;min-width:10em;min-height:1em;padding:0em 0.5em 0.5em 1em;font-size:1.25em;font-family:sans-serif;color:#000;border-left:solid #000 2px;border-top:solid #000 2px;border-top-left-radius:.5em;background:#fff;opacity:1}tw-debugger select{margin-right:1em;width:12em}tw-debugger button{border-radius:3px;border:solid #999 1px;margin:auto 4px;background-color:#fff;font-size:inherit;color:#000}tw-debugger button.enabled{background-color:#eee;box-shadow:inset #ddd 3px 5px 0.5em}tw-debugger .panel{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;position:absolute;bottom:100%;left:-2px;right:0;padding:1em;max-height:40vh;overflow-y:scroll;overflow-x:hidden;z-index:999998;background:#fff;border:inherit;border-bottom:solid #999 2px;border-top-left-radius:.5em;border-bottom-left-radius:.5em;font-size:0.8em}tw-debugger .panel:empty,tw-debugger .panel[hidden]{display:none}tw-debugger .panel-source,tw-debugger .panel-row-source{font-family:monospace;overflow-x:scroll;white-space:pre;-ms-flex-preferred-size:100%;flex-basis:100%}tw-debugger .panel-row-source{margin:5px 0}tw-debugger .panel-rows{width:100%;overflow-x:scroll}tw-debugger .panel-rows>*{display:table-row}tw-debugger .panel-rows>div:nth-of-type(2n){background:#EEE}tw-debugger .panel-row-buttons{text-align:right}tw-debugger .panel-variables .panel-rows:empty::before{content:"~ No variables ~";font-style:italic;color:#888;text-align:center}tw-debugger .panel-enchantments .panel-rows:empty::before{content:"~ No enchantments ~";font-style:italic;color:#888;text-align:center}tw-debugger .panel-errors .panel-rows:empty::before{content:"~ No errors... for now. ~";font-style:italic;color:#888;text-align:center}tw-debugger .panel-rows:empty+.panel-variables-bottom{display:none}tw-debugger .panel-storylets:not(.panel-exclusive) .storylet-exclusive,tw-debugger .panel-storylets:not(.panel-urgent) .storylet-urgent{display:none}tw-debugger .panel-variables-bottom{padding-top:5px}tw-debugger .enchantment-row{min-height:1.5em}tw-debugger .variable-path{opacity:0.4}tw-debugger .temporary-variable-scope,tw-debugger .enchantment-local{font-family:sans-serif;font-weight:normal;opacity:0.8;font-size:0.75em}tw-debugger .temporary-variable-scope:not(:empty)::before,tw-debugger .enchantment-local:not(:empty)::before{content:" in "}tw-debugger .variable-name,tw-debugger .enchantment-name{font-family:monospace;font-weight:bold}tw-debugger .variable-type{color:#444;font-weight:normal;text-overflow:ellipsis;overflow:hidden;max-width:10em}tw-debugger .error-row{display:table-row;background-color:rgba(230,101,204,0.3)}tw-debugger .error-row:nth-of-type(2n){background-color:rgba(237,145,219,0.3)}tw-debugger .error-row>*{display:table-cell;padding:0.25em 0.5em}tw-debugger .error-row .error-message{cursor:help}tw-debugger .error-row .error-passage{color:#444}tw-debugger .storylet-row{background-color:rgba(201,233,222,0.3)}tw-debugger .storylet-row:nth-child(2n){background-color:rgba(128,203,178,0.3)}tw-debugger .storylet-row.storylet-closed{font-style:italic;opacity:0.4;background-color:rgba(217,217,217,0.3)}tw-debugger .storylet-row.storylet-closed:nth-child(2n){background-color:rgba(166,166,166,0.3)}.storylet-error tw-debugger .storylet-row{background-color:rgba(230,101,204,0.3)}.storylet-error tw-debugger .storylet-row:nth-child(2n){background-color:rgba(237,145,219,0.3)}tw-debugger .storylet-row .storylet-name,tw-debugger .storylet-row .storylet-value{display:inline-block;width:50%}tw-debugger .tabs{padding-bottom:0.5em}tw-debugger .tab{border-radius:0px 0px 0.5em 0.5em;border-top:none}tw-debugger .resizer{position:absolute;height:3em;border-left:2px solid #ccc;border-right:2px solid #ccc;top:10px;left:4px;width:8px;cursor:ew-resize}tw-dialog{z-index:999997;border:#fff solid 2px;padding:2em;color:#fff;background-color:#000;display:block}@media (min-width: 576px){tw-dialog{max-width:50vw}}tw-dialog input[type=text]{font-size:inherit;width:100%}tw-dialog-links{text-align:right;display:-ms-flexbox;display:flex;-ms-flex-pack:end;justify-content:flex-end}tw-backdrop{z-index:999996;position:fixed;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.8);display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center}tw-backdrop ~ tw-backdrop{display:none}tw-link,.link,tw-icon,.enchantment-clickblock{cursor:pointer}tw-link,.enchantment-link{color:#4169E1;font-weight:bold;text-decoration:none;transition:color 0.2s ease-in-out}tw-passage [style^="color"] tw-link:not(:hover),tw-passage [style*=" color"] tw-link:not(:hover),tw-passage [style^="color"][hover="true"] tw-link:hover,tw-passage [style*=" color"][hover="true"] tw-link:hover,tw-passage [style^="color"] .enchantment-link:not(:hover),tw-passage [style*=" color"] .enchantment-link:not(:hover),tw-passage [style^="color"][hover="true"] .enchantment-link:hover,tw-passage [style*=" color"][hover="true"] .enchantment-link:hover{color:inherit}tw-link:hover,.enchantment-link:hover{color:#00bfff}tw-link:active,.enchantment-link:active{color:#DD4B39}.visited{color:#6941e1}tw-passage [style^="color"] .visited:not(:hover),tw-passage [style*=" color"] .visited:not(:hover),tw-passage [style^="color"][hover="true"] .visited:hover,tw-passage [style*=" color"][hover="true"] .visited:hover{color:inherit}.visited:hover{color:#E3E}tw-broken-link{color:#993333;border-bottom:2px solid #993333;cursor:not-allowed}tw-passage [style^="color"] tw-broken-link:not(:hover),tw-passage [style*=" color"] tw-broken-link:not(:hover),tw-passage [style^="color"][hover="true"] tw-broken-link:hover,tw-passage [style*=" color"][hover="true"] tw-broken-link:hover{color:inherit}.enchantment-mouseover{border-bottom:2px dashed #999}.enchantment-mouseout{border:rgba(64,149,191,0.6) 1px solid}.enchantment-mouseout:hover{background-color:rgba(175,197,207,0.75);border:transparent 1px solid;border-radius:0.2em}.enchantment-clickblock{width:100%;height:100%;display:block}.enchantment-clickblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;color:rgba(65,105,225,0.5);transition:color 0.2s ease-in-out}.enchantment-clickblock>:not(tw-enchantment):hover::after{color:rgba(0,191,255,0.5)}.enchantment-clickblock>:not(tw-enchantment):active::after{color:rgba(222,78,59,0.5)}.enchantment-clickblock>:not(tw-enchantment)::after{box-shadow:inset 0 0 0 0.5vmax}.enchantment-clickblock>tw-passage::after,.enchantment-clickblock>tw-sidebar::after{box-shadow:0 0 0 0.5vmax}.enchantment-mouseoverblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:2px dashed #999}.enchantment-mouseoutblock>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;border:rgba(64,149,191,0.6) 2px solid}.enchantment-mouseoutblock:hover>:not(tw-enchantment)::after{content:"";width:100%;height:100%;top:0;left:0;display:block;box-sizing:border-box;position:absolute;pointer-events:none;background-color:rgba(175,197,207,0.75);border:transparent 2px solid;border-radius:0.2em}tw-link.enchantment-button,.enchantment-link.enchantment-button,.enchantment-button:not(.enchantment-link) tw-link,.enchantment-button:not(.enchantment-link) .enchantment-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block}tw-dialog-links{padding-top:1.5em}tw-dialog-links tw-link{border-radius:16px;border-style:solid;border-width:2px;text-align:center;padding:0px 8px;display:block;display:inline-block}html{margin:0;height:100%;overflow-x:hidden}*,:before,:after{position:relative;box-sizing:inherit}body{margin:0;height:100%}tw-storydata{display:none}tw-story{display:-ms-flexbox;display:flex;-ms-flex-direction:column;flex-direction:column;font:100% Georgia, serif;box-sizing:border-box;width:100%;min-height:100%;font-size:1.5em;line-height:1.5em;padding:5% 5%;overflow:hidden;background-color:#000;color:#fff}tw-story [style*=content-box] *{box-sizing:border-box}@media (min-width: 576px){tw-story{padding:5% 20%}}tw-story tw-consecutive-br{display:block;height:1.6ex;visibility:hidden}tw-story select{background-color:transparent;font:inherit;border-style:solid;padding:2px}tw-story select:not([disabled]){color:inherit}tw-story textarea{resize:none;background-color:transparent;font:inherit;color:inherit;border-style:none;padding:2px}tw-story input[type=checkbox]{transform:scale(1.5);margin:0 0.5em}tw-story tw-noscript{animation:appear 0.8s}tw-passage{display:block}tw-sidebar{text-align:center;display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between}@media (min-width: 576px){tw-sidebar{left:-5em;width:3em;position:absolute;-ms-flex-direction:column;flex-direction:column}tw-enchantment[style*="width"]>tw-sidebar{width:inherit}}tw-icon{display:inline-block;margin:0.5em 0;font-size:66px;font-family:"Verdana",sans-serif}tw-icon[alt]{opacity:0.2}tw-icon[alt]:hover{opacity:0.4}tw-icon[data-label]::after{font-weight:bold;content:attr(data-label);font-size:20px;bottom:-20px;left:-50%;white-space:nowrap}tw-meter{display:block}tw-hook:empty,tw-expression:empty{display:none}tw-error{display:inline-block;border-radius:0.2em;padding:0.2em;font-size:1rem;cursor:help;white-space:pre-wrap}tw-error.error{background-color:rgba(223,58,190,0.6);color:#fff}tw-error.warning{background-color:rgba(223,140,58,0.6);color:#fff;display:none}.debug-mode tw-error.warning{display:inline}tw-error-explanation{display:block;font-size:0.8rem;line-height:1rem}tw-open-button,tw-folddown{cursor:pointer;line-height:0em;border-radius:1px;border:1px solid black;font-size:0.8rem;margin:0 0.4rem;padding:2px;white-space:pre}tw-folddown::after{content:"\25b6"}tw-folddown.open::after{content:"\25bc"}tw-open-button::after{content:"Open"}tw-notifier{border-radius:0.2em;padding:0.2em;font-size:1rem;background-color:rgba(223,182,58,0.4);display:none}.debug-mode tw-notifier{display:inline}tw-notifier::before{content:attr(message)}tw-colour{border:1px solid black;display:inline-block;width:1em;height:1em}tw-enchantment:empty{display:none}h1{font-size:3em}h2{font-size:2.25em}h3{font-size:1.75em}h1,h2,h3,h4,h5,h6{line-height:1em;margin:0.3em 0 0.6em 0}pre{font-size:1rem;line-height:initial}small{font-size:70%}big{font-size:120%}mark{color:rgba(0,0,0,0.6);background-color:#ff9}ins{color:rgba(0,0,0,0.6);background-color:rgba(255,242,204,0.5);border-radius:0.5em;box-shadow:0em 0em 0.2em #ffe699;text-decoration:none}center{text-align:center;margin:0 auto;width:60%}blink{text-decoration:none;animation:fade-in-out 1s steps(1, end) infinite alternate}tw-align{display:block}tw-columns{display:-ms-flexbox;display:flex;-ms-flex-direction:row;flex-direction:row;-ms-flex-pack:justify;justify-content:space-between}.transition-in{animation:appear 0ms step-start}.transition-out{animation:appear 0ms step-end}[data-t8n^=dissolve].transition-in,[data-t8n=fade].transition-in{animation:appear .8s}[data-t8n^=dissolve].transition-out,[data-t8n=fade].transition-out{animation:appear .8s reverse}[data-t8n^=shudder].transition-in{display:inline-block !important;animation:shudder-in .8s}[data-t8n^=shudder].transition-out{display:inline-block !important;animation:shudder-in .8s reverse}[data-t8n^=rumble].transition-in{display:inline-block !important;animation:rumble-in .8s}[data-t8n^=rumble].transition-out{display:inline-block !important;animation:rumble-in .8s reverse}[data-t8n^=pulse].transition-in{animation:pulse .8s;display:inline-block !important}[data-t8n^=pulse].transition-out{animation:pulse .8s reverse;display:inline-block !important}[data-t8n^=zoom].transition-in{animation:zoom-in .8s;display:inline-block !important}[data-t8n^=zoom].transition-out{animation:zoom-in .8s reverse;display:inline-block !important}[data-t8n^=blur].transition-in{animation:blur .8s;display:inline-block !important}[data-t8n^=blur].transition-out{animation:blur .8s reverse;display:inline-block !important}[data-t8n^=slideleft].transition-in{animation:slide-left .8s;display:inline-block !important}[data-t8n^=slideleft].transition-out{animation:slide-right .8s reverse;display:inline-block !important}[data-t8n^=slideright].transition-in{animation:slide-right .8s;display:inline-block !important}[data-t8n^=slideright].transition-out{animation:slide-left .8s reverse;display:inline-block !important}[data-t8n^=slideup].transition-in{animation:slide-up .8s;display:inline-block !important}[data-t8n^=slideup].transition-out{animation:slide-down .8s reverse;display:inline-block !important}[data-t8n^=slidedown].transition-in{animation:slide-down .8s;display:inline-block !important}[data-t8n^=slidedown].transition-out{animation:slide-up .8s reverse;display:inline-block !important}[data-t8n^=fadeleft].transition-in{animation:fade-left .8s;display:inline-block !important}[data-t8n^=fadeleft].transition-out{animation:fade-right .8s reverse;display:inline-block !important}[data-t8n^=faderight].transition-in{animation:fade-right .8s;display:inline-block !important}[data-t8n^=faderight].transition-out{animation:fade-left .8s reverse;display:inline-block !important}[data-t8n^=fadeup].transition-in{animation:fade-up .8s;display:inline-block !important}[data-t8n^=fadeup].transition-out{animation:fade-down .8s reverse;display:inline-block !important}[data-t8n^=fadedown].transition-in{animation:fade-down .8s;display:inline-block !important}[data-t8n^=fadedown].transition-out{animation:fade-up .8s reverse;display:inline-block !important}[data-t8n^=flicker].transition-in{animation:flicker .8s}[data-t8n^=flicker].transition-out{animation:flicker .8s reverse}
 </style>
 </head>
 <body>
-<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Good Hunting (img+audio).</tw-noscript></noscript></tw-story>
-<tw-storydata name="Good Hunting (img+audio)" startnode="1" creator="Twine" creator-version="2.3.14" ifid="F54BF804-C8D9-47DF-AEBA-53DF3F308A8A" zoom="0.6" format="Harlowe" format-version="3.2.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="" position="573,24" size="100,100">Introduction to Yen, and how she hunts people, and her mother and everything
+<tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Good Hunting (img+audio + text).</tw-noscript></noscript></tw-story>
+<tw-storydata name="Good Hunting (img+audio + text)" startnode="1" creator="Twine" creator-version="2.3.14" ifid="F54BF804-C8D9-47DF-AEBA-53DF3F308A8A" zoom="0.6" format="Harlowe" format-version="3.2.2" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Intro" tags="" position="573,24" size="100,100">Your name is Yen. You are a Huli Jing who lives in the forests of China. Your race is a magical one, tied to the ancient energies and spirits which grants you the abilities to shift yourself between humanoid and fox forms.
+
+Because of your abilities, humans perceive you as a threat, and believe that your kind hunts humans for sport. But you know that to be untrue, don&#39;t you? Humans instigate violence, and you only protect your people. 
+
+You currently reside at your den, a ramshackle building, decaying and merging with the local shrubbery, lush with places to burrow into and dig around it. Your mother has been away for quiet a while now. Should you begin to get worried?
 
 [[Continue]]
 
 &lt;img src=&quot;https://static.wixstatic.com/media/9c9493_c6751f0b90724eca90839be525074fff~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
 
-&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_f0aa8dd2be894244ac832a201887e750.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="2" name="Continue" tags="" position="573,174" size="100,100">Mother returns from a &quot;hunt&quot;
+&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_f0aa8dd2be894244ac832a201887e750.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="2" name="Continue" tags="" position="573,174" size="100,100">Suddenly, you here a violent rustling in the distant forest. You approach the end of the clearing which is your home, perking your ears up and snout toward the direction of the noise.
 
-Tells Yen to hide deep in the burrow
+You here the scream of your mother.
 
+She darts out of the treetop, pursued by a middle-aged man, whose teenage child meanders behind. The man is armed with a weapon, devious technology from the humans meant to lay waste to your magical culture.
+
+&quot;Yen! Go!&quot;
+
+Your mother runs atop the building, and goes into an agape window on the upper floor. The father follows shortly behind her, seemingly unaware of your presense. Yet his son lingers still, although his awkward behavior implies that he is not doing hunting for himself, and perhaps is not a threat.
+
+What do you do?
 [[Hide in burrow?]]
 
 [[watch out of burrow for safety]]
 
 &lt;img src=&quot;https://static.wixstatic.com/media/9c9493_f7935c9f3fbd436cbf6f5d064b94de87~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
 
-&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_0c4527addda54d8593d1c885a2b502e3.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="3" name="Hide in burrow?" tags="" position="496,324" size="100,100">Hear scream from Mother.
+&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_0c4527addda54d8593d1c885a2b502e3.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="3" name="Hide in burrow?" tags="" position="496,324" size="100,100">The boy has not yet seen you, and you hear a violet final shriek from your mother.
 
-Father talks and boy looks and sees a glimmer in the burrow
+You scitter into your burrow, and you look behind you as you run deep into it, and notice that the boy caught attention of your movement.
 
-the father sees the boy notice it and goes to the hole
+You hear the man&#39;s voice. He murmers something to his son. You can see that the father has noticed the son&#39;s attention toward your burrow.
 
-and the father kills yen
+You do not move, hoping it is dark enough that you will go unnoticed.
+
+Before you can react, the weapon is struck deep into the hole, plunged into your nose.
+
+You have lost to the human technology.
 
 &lt;img src=&quot;https://static.wixstatic.com/media/9c9493_629c4e001d5d4b198802fb1959e10cd5~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
 
-&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_4bcb96eb199e428ebb76cb7fb0eaf69e.mp3&quot;&gt;</tw-passagedata><tw-passagedata pid="4" name="watch out of burrow for safety" tags="" position="648,324" size="100,100">comes out to see the boy
+&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_4bcb96eb199e428ebb76cb7fb0eaf69e.mp3&quot;&gt;</tw-passagedata><tw-passagedata pid="4" name="watch out of burrow for safety" tags="" position="648,324" size="100,100">You approach the burrow, but do not fully go inside.
+
+While you stand there, the boy looks toward you, and notices the sadness in your eyes, your cowarding, non-invasive stance.
+
+You hear a shriek from your mother, a final yelp.
+
+You are filled with rage and sadness. What do you do?
 
 [[attack boy]]
 
@@ -43,29 +64,45 @@ and the father kills yen
 
 &lt;img src=&quot;https://static.wixstatic.com/media/9c9493_6333fa3ef0b3411d9bd79f7f5187b70d~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
 
-</tw-passagedata><tw-passagedata pid="5" name="attack boy" tags="" position="573,474" size="100,100">boy is killed, runs away
+</tw-passagedata><tw-passagedata pid="5" name="attack boy" tags="" position="573,474" size="100,100">You lunge at the unsuspecting boy, and tear his throat to shreds.
 
-continues to go hunting in the village
+Finally, those humans will know better than to mess with your kind.
+
+His father comes down the stairs, but cannot yet see you, so you dart behind the building and run into the forest.
 
 [[ten years later]]
 
 &lt;img src=&quot;https://static.wixstatic.com/media/9c9493_b2f5971ab6bf43798178a5121c1ca6c2~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
 
-&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_2f4f2bc018b242f28f38161cb21031c0.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="6" name="why do you hunt?" tags="" position="723,474" size="100,100">Talks to the boy, almost have like a bond with him.
+&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_2f4f2bc018b242f28f38161cb21031c0.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="6" name="why do you hunt?" tags="" position="723,474" size="100,100">&quot;Why do you hunt us?&quot; you ask the boy.
 
-Father comes and murders the mom.
+&quot;We do not hunt you, we are the ones being hunted!&quot; he declares.
 
-Father asks, see any foxes? boy says no
+You solemly shake your head. &quot;That is just not true, our kind want nothing to do with you humans.&quot;
+
+He makes no response, and looks at the ground.
+
+&quot;Have you ever tried to have something with one of us?&quot;
+
+The father starts down the stairs, and you dart into the burrow.
+
+The boy looks away as if nothing happened, and returns to his father, who asks the boy if he has seen anything. He says no.
+
+They both leave.
 
 [[run away, but remember]]
 
 &lt;img src=&quot;https://static.wixstatic.com/media/9c9493_16e68abeb36b40e4bbe43a6aac2a2f3c~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
 
-</tw-passagedata><tw-passagedata pid="7" name="run away, but remember" tags="" position="723,624" size="100,100">Ten years later...
+</tw-passagedata><tw-passagedata pid="7" name="run away, but remember" tags="" position="723,624" size="100,100">It has been ten years. The local area in China is becoming industrialized by a colonial power, and with their increasing encroachment you have felt your magical abilities waining. It is increasingly more difficult to change form now, even in the heart of the forest, with the technology of the city nearby.
 
-Hong Kong is become industrialized with technology, colonized by the Brits
+How will you get food? You cannot hunt if you cannot become a fox again.
 
-Losing magic powers because of technology
+You wonder where the boy has been all this time...
+
+Perhaps the city..?
+
+What do you do?
 
 [[go to the city to try to make whatever]]
 
@@ -73,9 +110,15 @@ Losing magic powers because of technology
 
 &lt;img src=&quot;https://static.wixstatic.com/media/9c9493_da1e3b13ff9a4439b97b0679b75bf559~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
 
-&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_3ec64918a9b944998b005de0109ed294.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="8" name="go to the city to try to make whatever" tags="" position="639,772" size="100,100">Has a job selling her beauty, because she doesn&#39;t have anything else anymore.
+&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_3ec64918a9b944998b005de0109ed294.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="8" name="go to the city to try to make whatever" tags="" position="639,772" size="100,100">You decide that the only way for you to sustain yourself is to go into the city, which drains you of all your magical powers.
 
-Evil british men try to get onto her
+You use your beautiful human form as an exchange to the colonials, paying you for their chance to use you.
+
+A group of three gnarly British men approach you in the street at midnight, and prod you with their staffs, closing in on you.
+
+If only you could transform into a fox, you could take them.
+
+What do you do?
 
 [[tries to fight back]]
 
@@ -83,19 +126,45 @@ Evil british men try to get onto her
 
 &lt;img src=&quot;https://static.wixstatic.com/media/9c9493_c707e13e5d344814a096b09fff1d4f8c~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
 
-&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_87dc24d3d7ec41768caec164be49469a.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="9" name="try to stay in forest for powers" tags="" position="798,774" size="100,100">she cannot have the powers in the forest, no matter how hard she tries.
+&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_87dc24d3d7ec41768caec164be49469a.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="9" name="try to stay in forest for powers" tags="" position="798,774" size="100,100">You stay in the forest.
+
+You find yourself now unable to have your powers, no matter how hard you try.
+
+Everytime you try, you think about your mother, and how she helped you hunt, and how you still mourn her, and want to avenge her.
+
+Where is it you can go?
 
 [[go to the city to try to make whatever]]
-find somewhere else less urbanized?
+Find somewhere else less urbanized?
 [[travels]]
 
 &lt;img src=&quot;https://static.wixstatic.com/media/9c9493_d28058f1fbbf44b9b2828c52b5612071~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
 
-&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_506dfb15d3f64ba6add66fd55cdb934a.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="10" name="pauses for a second" tags="" position="603,925" size="100,100">[[liang approaches]]</tw-passagedata><tw-passagedata pid="11" name="tries to fight back" tags="" position="723,924" size="100,100">[[liang approaches]]</tw-passagedata><tw-passagedata pid="12" name="liang approaches" tags="" position="603,1074" size="100,100">becomes good friends, they talk
+&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_506dfb15d3f64ba6add66fd55cdb934a.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="10" name="pauses for a second" tags="" position="603,925" size="100,100">You don&#39;t do anything. It is no use. 
 
-intro to what liang is doing with robots and technologies
+They move their staff up your leg, and you shiver.
 
-oh i got a request from the governor, which would give her good money, but she&#39;d be locked in. Does she...?
+You then hear a voice say something from behind...
+
+[[liang approaches]]</tw-passagedata><tw-passagedata pid="11" name="tries to fight back" tags="" position="723,924" size="100,100">You try to fight back, lunging for their throats, but they smack you away with their staffs, and you fall to the ground in despare, and they ready themselves for more violence.
+
+You hear someone say something from behind...
+
+[[liang approaches]]</tw-passagedata><tw-passagedata pid="12" name="liang approaches" tags="" position="603,1074" size="100,100">It is Liang!
+
+He comes to your rescue and beats the British over their heads with the skills he learned while hunting with his dad.
+
+He takes you to his housing unit, where he tells you about his fascination with robots and technologies and gears, and the little trinkets and robotic animals he has bee making with it.
+
+It makes you a bit uneasy, seeing all this technology around him.
+
+You go about into the city again, but you and Liang meet up frequently. He is good company.
+
+You receive a request from the governor of the city; he wants you to be his long-term patron. This would be a stable opportunity to maintain a living, but this would also probably be a permanent ordeal.
+
+You know Liang has a job at a factory, but working around those machines would make you queasy.
+
+What do you do?
 
 &lt;img src=&quot;https://static.wixstatic.com/media/9c9493_404a300f17eb425a9c907a1ec49b1d8f~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
 
@@ -103,26 +172,61 @@ oh i got a request from the governor, which would give her good money, but she&#
 
 [[accept it]]
 
-[[say no to gov]]</tw-passagedata><tw-passagedata pid="13" name="ask liang to help get job" tags="" position="453,1224" size="100,100">he helps her get a job working with the gears and stuff
+[[say no to gov]]</tw-passagedata><tw-passagedata pid="13" name="ask liang to help get job" tags="" position="453,1224" size="100,100">You take a deep breath and run to Liang, and ask him to help you get a job at his factory.
+
+He is delighted, and he spends his nights showing you the ins and outs of his technological workings, and the things he designs for the city.
 
 &lt;img src=&quot;https://static.wixstatic.com/media/9c9493_b26a9228fa2a4ed1a42f2fba25e6add6~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
 
 [[works with liang]]
 
-&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_506dfb15d3f64ba6add66fd55cdb934a.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="14" name="accept it" tags="" position="603,1224" size="100,100">gov is not bad, pays her just for her to be around him.
+&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_506dfb15d3f64ba6add66fd55cdb934a.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="14" name="accept it" tags="" position="603,1224" size="100,100">It is best to take the job you have been offered. Such an opportunity is not common in the city.
 
-one day gov is suspciious around drink, but she drinks anyway bc she suspects nothing. Passes out.
+The governor is actually a surprisingly pleasant fellow to accompany. He does not attempt to make advances on you like the other men. In fact, he hardly does anything sexual with you whatsoever, short of admiring you prescense and company.
+
+You are glad you made this choice.
+
+One night, you are sitting with the governor on his sofa, drinking funny tasting colonial drinks, gently carressing and kissing him, yet nothing more.
+
+Something seems wrong with him, though. Lately, he has been smiling less, and has been increasingly more irritable.
+
+Could it be that you h---
 
 &lt;img src=&quot;https://static.wixstatic.com/media/9c9493_a35b24d33b254ec883ef623abdde979d~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
 
 [[Wake up]]
 
-&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_f0e6043031d747aab6b56a70480e1810.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="15" name="say no to gov" tags="" position="753,1224" size="100,100">&lt;img src=&quot;https://static.wixstatic.com/media/9c9493_51d706d34d294a2fb31c620cc6303347~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
+&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_f0e6043031d747aab6b56a70480e1810.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="15" name="say no to gov" tags="" position="753,1224" size="100,100">You decide it is best to refuse the governor&#39;s offer. But what are you supposed to do now? There&#39;s not anywhere else to go. You could attempt to find a job, or leave the city in search for a connection with the magic again, but you don&#39;t even know if that is possible. All your options are so confusing right now, unclear.
 
+What do you choose to do?
+
+&lt;img src=&quot;https://static.wixstatic.com/media/9c9493_51d706d34d294a2fb31c620cc6303347~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
 
 [[leave hong kong?]]
 
-[[try to find job]]</tw-passagedata><tw-passagedata pid="16" name="Wake up" tags="" position="603,1374" size="100,100">your legs are getting cut off.
+[[try to find job]]</tw-passagedata><tw-passagedata pid="16" name="Wake up" tags="" position="603,1374" size="100,100">SCREAM
+
+YOU AWAKE TO FIND YOURSELF STRAPPED DOWN TO A GURNEY IN AN OPERATING ROOM
+
+YOU ARE MISSING YOUR LEGS
+
+THEY HAVE BEEN CUT OFF WITH AN OLD METAL TOOL
+
+THEY LIE ON A TABLE ON THE OTHER SIDE OF THE ROOM
+
+THE GOVERNOR IS THERE, AND HE SMILES
+
+YOU KNEW THAT DRINK TASTED FUNNY
+
+THE GOVERNOR CACKLES
+
+WHAT
+
+CAN
+
+YOU
+
+DO
 
 &lt;img src=&quot;https://static.wixstatic.com/media/9c9493_9a636015e3bf41b189d324cc222b0542~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
 
@@ -130,13 +234,49 @@ one day gov is suspciious around drink, but she drinks anyway bc she suspects no
 
 [[cry]]
 
-&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_495f7a42bfb549f6af90f1998c803f86.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="17" name="scream" tags="" position="528,1524" size="100,100">[[become full robot]]
+&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_495f7a42bfb549f6af90f1998c803f86.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="17" name="scream" tags="" position="528,1524" size="100,100">YOU LET OUT ANOTHER SCREAM
 
-&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_87dc24d3d7ec41768caec164be49469a.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="18" name="cry" tags="" position="678,1524" size="100,100">[[become full robot]]
+IT IS NO USE.
 
-&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_87dc24d3d7ec41768caec164be49469a.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="19" name="become full robot" tags="" position="528,1674" size="100,100">gov gets hard bc she is a robot
+THE OPERATORS HAVE A COLLECTION OF ROBOTIC PARTS, AND IT SEEMS LIKE TO YOU...
 
-she does not like being robot, she is fully detached from magic, not good she does not like
+THEY ARE...
+
+ROBOTIC LIMBS.
+
+[[become full robot]]
+
+&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_87dc24d3d7ec41768caec164be49469a.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="18" name="cry" tags="" position="678,1524" size="100,100">YOU CLOSE YOUR EYES AND WEEP
+
+IT IS NO USE
+
+WHY HAVE THEY DONE THIS?
+
+WHY
+
+WHY
+
+[[become full robot]]
+
+&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_87dc24d3d7ec41768caec164be49469a.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="19" name="become full robot" tags="" position="528,1674" size="100,100">You wake up again, seemingly knocked out due to your previous fit, and find your legs... are there.
+
+No, not your legs.
+
+Metal, cold, robotic legs, with gears and oil and pieces.
+
+The governor is around you much more frequently now, and is a lot less pleasant.
+
+He forces himself ontop of your robotic parts, and he feel the seam between the robot and the flesh rip.
+
+He can only get aroused to robots.
+
+And you do nothing, because of the pain of being transformed into this, drained of all your abilities.
+
+There is not much you can do.
+
+This continues, and over time, he adds to your parts of which are robotic. Only peices of flesh remain, and you appear to have not once have been a living creature.
+
+Your face is now robotic as well, and the governor approaches you as he has done many times before.
 
 &lt;img src=&quot;https://static.wixstatic.com/media/9c9493_34a48cbfc87642419ab7c8c4a9940679~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
 
@@ -144,7 +284,15 @@ she does not like being robot, she is fully detached from magic, not good she do
 
 [[accepts]]
 
-&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_b619851f141f4e6299e2d5be3c3964ce.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="20" name="say no to gov for the first time?" tags="" position="453,1824" size="100,100">he beats her.
+&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_b619851f141f4e6299e2d5be3c3964ce.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="20" name="say no to gov for the first time?" tags="" position="453,1824" size="100,100">You say no to the governor.
+
+He is astonished, and disgusted.
+
+He beats you, ripping at your robotic parts so that blood flows from your flesh.
+
+He slaps you onto the other end of the bed.
+
+It seems like nothing is of much use now.
 
 &lt;img src=&quot;https://static.wixstatic.com/media/9c9493_51d706d34d294a2fb31c620cc6303347~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
 
@@ -152,21 +300,35 @@ she does not like being robot, she is fully detached from magic, not good she do
 
 [[or just fight him]]
 
-&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_2f4f2bc018b242f28f38161cb21031c0.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="21" name="accepts" tags="" position="603,1822" size="100,100">becomes governor&#39;s robot slave.
+&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_2f4f2bc018b242f28f38161cb21031c0.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="21" name="accepts" tags="" position="603,1822" size="100,100">You give up the idea of even trying to resist him whatsoever.
 
-he makes better robots just like her but better. she is in his robot penetentirary. He makes full robots but she is still half biological half robot.
+He becomes pleased with you as his robotic subserviant, yet in due time, after studying your physiology, he creates more, pure robotic beings in which he filters out your biological imperfections, to suit his twisted desires.
 
-she is outdated
+He casts you away, as you are just another old robot now.
+
+He sells you to his home country, to someone who is interested in someone like you.
 
 &lt;img src=&quot;https://static.wixstatic.com/media/9c9493_9f3d5f4777224703966afdecab884fa6~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
 
 [[sent to england]]
 
-&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_a17a289ea3714ac49850754ceb728771.mp3 autoplay&gt;</tw-passagedata><tw-passagedata pid="22" name="pretend to approach him?" tags="" position="378,1974" size="100,100">she pretends to kiss and rips his face in half
+&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_a17a289ea3714ac49850754ceb728771.mp3 autoplay&gt;</tw-passagedata><tw-passagedata pid="22" name="pretend to approach him?" tags="" position="378,1974" size="100,100">Without your magical abilities, you cannot do much.
 
-leaves
+But... with these robotic abilities...
 
-out in city, what next?
+You give in, and lean in for a kiss, looking into his eyes, seducing him.
+
+He puckers up, and you reach your hands for his cheeks...
+
+...and tear his face in half, and toss the pieces on the ground.
+
+His body tremors just briefly.
+
+You run out into the city, into the night.
+
+What can you do, what can you do?
+
+These abilities disgust you, but perhaps they could be of some use..?
 
 &lt;img src=&quot;https://static.wixstatic.com/media/9c9493_0c32359192994a47aec934319d021905~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
 
@@ -174,9 +336,13 @@ out in city, what next?
 
 [[explain to liang]]
 
-&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_25bb3b80c0d346a59aa8ad34b6f0ed0b.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="23" name="or just fight him" tags="" position="528,1974" size="100,100">he punches her, he tries to punch back, but even as a robot she is no match cimpared to what she was as magic. she manages to flee. Where does she go?
+&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_25bb3b80c0d346a59aa8ad34b6f0ed0b.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="23" name="or just fight him" tags="" position="528,1974" size="100,100">The governor punches you, and you lunge for him and knock him down, and he bleeds. You attack him, but he is still a mighty force. You are not use to this robot body, and it is still no match to what you previously were with your magic.
 
-go to forest?
+The governor cannot cause pain to you this way, he cannot destroy you, but you cannot overpower him like this. He would surely find a way to punish you.
+
+You use your remaining strength to kick him away and run out of the room, into the city.
+
+What now?
 
 &lt;img src=&quot;https://static.wixstatic.com/media/9c9493_c125145833ee4f10a0df6c22153914a9~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
 
@@ -184,52 +350,151 @@ go to forest?
 
 [[explain to liang]] 
 
-&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_87dc24d3d7ec41768caec164be49469a.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="24" name="reject everything and just fight people as robot" tags="" position="303,2124" size="100,100">fights people but is not powerful and dissatisfied as robot
+&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_87dc24d3d7ec41768caec164be49469a.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="24" name="reject everything and just fight people as robot" tags="" position="303,2124" size="100,100">You decide to use your abilities to hunt and protect innocent people of the city.
 
+You fight off many colonials, but although you have strength and raw force, this robotic form is distracting, and uncomfortable, so that you cannot utilize it to its full potential, and are unable to continue fighting.
 
-[[explain to liang]]</tw-passagedata><tw-passagedata pid="25" name="explain to liang" tags="" position="454,2124" size="100,100">explains everything to liang
+You must go explain this to Liang.
 
-want options
+[[explain to liang]]</tw-passagedata><tw-passagedata pid="25" name="explain to liang" tags="" position="454,2124" size="100,100">You flee to Liang and explain the entire situation to him, about being a robot now, the governor, it all.
+
+Liang shares you his idea, which you are unsure about.
+
+He can work on you, mechanically, to change your form. He isn&#39;t sure if it will work, but you have an inkling to trust him. He hopes that if he alters your technological body, he will be able to replicate your magical powers using technology.
+
+He acknowledges that is a big decision.
+
+Give it time to think.
+
+And then choose.
 
 &lt;img src=&quot;https://static.wixstatic.com/media/9c9493_fdf6625ead3145c48d6b873c800e9913~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
 
 [[do you want magic over robot?]]
 
-[[use robot as magic?]]</tw-passagedata><tw-passagedata pid="26" name="do you want magic over robot?" tags="" position="378,2274" size="100,100">runs to forest because she doesn&#39;t want to be robot
-would rather die than be robot
-runs back to the den where her mom died and dies there
+[[use robot as magic?]]</tw-passagedata><tw-passagedata pid="26" name="do you want magic over robot?" tags="" position="378,2274" size="100,100">You refuse the offer.
 
-bad ending :(
+You will not become further mechanicalized.
 
+You are set out to regain your magic.
+
+You go to the clearing where you and your mom once lived, your old den, that old building.
+
+In the forest, your mechanics start to rust, and your movement becomes stiff.
+
+You are unable to find adequate food through hunting.
+
+But you will not return to Hong Kong.
+
+You crawl up onto the top of the outdoor stairs of the building, and curl into a fetal position, lying on the dusty, overgrown wood.
+
+This is where you will remain
+
+				up to
+					
+						the very,
+						
+								very,
+								
+										end.
+
+
+															THE END.
 &lt;img src=&quot;https://static.wixstatic.com/media/9c9493_d28058f1fbbf44b9b2828c52b5612071~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
 
-&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_b36d2dd7da3b4c5ca524b5eb4d228f36.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="27" name="use robot as magic?" tags="" position="526,2274" size="100,100">liang makes her a robot that can turn into a fox. she goes around and beats up bad guys and is satisfied with herself
+&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_b36d2dd7da3b4c5ca524b5eb4d228f36.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="27" name="use robot as magic?" tags="" position="526,2274" size="100,100">Liang works on you for many days and nights, taking you apart and putting you together again.
 
-Yay :)
+You are afraid it may not work.
+
+Regardless, there is no going back after this.
+
+Your remaining biological peices will have to be removed for the transformation to be possible, so you will be completely severed on the magic, wholly reliant on the technology to transform you.
+
+He finishes, and take you to the street, to test your new ability.
+
+You refuse, and run off into the night.
+
+It would be an embarrassment if his toils ended up for naught, so you do not show him if you can transform.
+
+									***
+
+Liang searches for you, and he stops in an alleyway, noticing three colonial men closing in on a young girl. They pull down their trousers, an then turn up toward the moon.
+
+Above them, a glowing, glittering metallic fox lunges off a building, sealing their fate, and saving yours.
+
+THE END
 
 &lt;img src=&quot;https://static.wixstatic.com/media/9c9493_3f39fdc790d0488084476ac87e32a763~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
 
-&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_b36d2dd7da3b4c5ca524b5eb4d228f36.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="28" name="sent to england" tags="" position="648,1974" size="100,100">shipped off to england to some guys like clock shop in the forest. he tinkers and makes robot animals and creatures
+&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_b36d2dd7da3b4c5ca524b5eb4d228f36.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="28" name="sent to england" tags="" position="648,1974" size="100,100">You are shipped off to England, and are hopeless in imagining what may come next.
 
-she lives in the forest with robot creatures
+The man you are sent to lives in a forest, in a brick house, a tinkerer who designs clocks and other geared machines.
 
-somewhat happy :&gt;
+Fortunately, he has not the twisted desire that the governor had.
+
+&quot;I heard about you,&quot; he tells you. &quot;You and your magical kind, roaming throughout the forests, until my people cast you out. The same thing happened here, in England. We were once a magical land as well, until the people in charge made everything cursed with their sludge and oil. Yet, within the curse, there is a blessing...&quot;
+
+He leads you to a clearing behind his house in the forest.
+
+There are glimmers of light jumping about the grass. Creatures, it seems. Robotic creatures, robotic rabbits, foxes, animals, and other magical creatures! All living together in the forest.
+
+&quot;I know this was an unorthodox and painful way to bring you here... but the governor could be dealt with no other way. Here, I plan to rebuild the magical world once again. It is not the technology that stopped your magical powers, that cast out the old ways. It was Man, with His greed, who cursed your lands. Man never attempted to integrate His new ways with what came before, so one had to go. But not here, and hopefully, not in the future.&quot;
+
+You live in the forest with these robotic creatures, and assist the man in building more of them, designing them, and helping him understand the precise balance of magical beings. You provide him the magic understanding, and he uses the technology to bring it to life, so that your childhood home is now living in detail in this forest.
+
+You feel your magic abilities returning, strangely. It is funny, that you are still robot, yet feel this magic. What could it be?
+
+The bits of flesh you have left retained the memory of your abilities, and you find yourself able to transform those parts of you.
+
+And soon, you can ever harness the capabilities of your robotic self, and transform your entire being once again.
+
+&#39;&#39;THE END&#39;&#39;
 
 &lt;img src=&quot;https://static.wixstatic.com/media/9c9493_36d5613b535840389307bc6726f0e665~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
 
-&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_506dfb15d3f64ba6add66fd55cdb934a.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="29" name="leave hong kong?" tags="" position="724,1374" size="100,100">leave shong kongg to a place where she can have her power.
+&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_506dfb15d3f64ba6add66fd55cdb934a.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="29" name="leave hong kong?" tags="" position="724,1374" size="100,100">You set out to get away from this city, not knowing where you are headed. Yeah take the stone roads out of the city, turning into dirt roads, turning into forest trails, the familiar forest in which you grew up, or at least what of remained.
 
-she travels there
+You have left everything you have ever known.
 
 &lt;img src=&quot;https://static.wixstatic.com/media/9c9493_27efbe3668144ca289fe890ae96deea2~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
 
-[[travels]]</tw-passagedata><tw-passagedata pid="30" name="try to find job" tags="" position="828,1374" size="100,100">finds a job
+[[travels]]</tw-passagedata><tw-passagedata pid="30" name="try to find job" tags="" position="828,1374" size="100,100">You search for a job, but in the meantime, you are unable to sustain yourself.
 
-[[works with liang]]</tw-passagedata><tw-passagedata pid="31" name="works with liang" tags="" position="453,1374" size="100,100">&lt;img src=&quot;https://static.wixstatic.com/media/9c9493_5cb730ed571445d38f688472c39d009f~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;</tw-passagedata><tw-passagedata pid="32" name="travels" tags="" position="798,1524" size="100,100">she finds a place rural and undeveloped. misses liang but shes gets magic back somewhat ending happy
+You cannot find food to eat most days, yet refuse to go back to your old ways, trying to find what magic you can within the city, among rodents or small shrubs.
+
+You lay curled up under a lamppost, and are found by Liang, who takes you in and provides you with food and a place to stay, and even offers a job at his work with you.
+
+For now, this is the best option.
+
+[[works with liang]]</tw-passagedata><tw-passagedata pid="31" name="works with liang" tags="" position="453,1374" size="100,100">You work for Liang for years to come, and it is good, as you are able to maintain yourself.
+
+You do not remember what it was like to hunt, or run through the forest.
+
+You do not feel like yourself anymore.
+
+You are someone else, hardly present within this humanoid form.
+
+But, at least you are alive, right?
+
+&lt;img src=&quot;https://static.wixstatic.com/media/9c9493_5cb730ed571445d38f688472c39d009f~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;</tw-passagedata><tw-passagedata pid="32" name="travels" tags="" position="798,1524" size="100,100">You travel over the rough terrain on the outside of the city and forest. The industry has crept here too, with mechanical machines draining the soil of its nutrients. You scourage for food, managing your way through this barren land. Eventually, you are gone from any mark of humanity whatsoever.
+
+You find a small pond, with some forest around it, and you settle here.
+
+For now.
+
+This will work for now.
 
 &lt;img src=&quot;https://static.wixstatic.com/media/9c9493_d65332d83b644b83a7400f8bd23b7e9a~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
 
-&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_506dfb15d3f64ba6add66fd55cdb934a.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="33" name="ten years later" tags="" position="603,624" size="100,100">ten years later feels bad she killed boy, power is losing and leaving bc of urbanization and colonials.
+&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_506dfb15d3f64ba6add66fd55cdb934a.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="33" name="ten years later" tags="" position="603,624" size="100,100">It has been ten years. The local area in China is becoming industrialized by a colonial power, and with their increasing encroachment you have felt your magical abilities waining. It is increasingly more difficult to change form now, even in the heart of the forest, with the technology of the city nearby.
+
+How will you get food? You cannot hunt if you cannot become a fox again.
+
+And the city... if you went there, in search for a job as a human, there would be a good chance that the boy&#39;s father would find you.
+
+No, you cannot live among the humans, after what they did to you.
+
+What do you do?
 
 [[stay in forest]]
 
@@ -237,9 +502,13 @@ she travels there
 
 &lt;img src=&quot;https://static.wixstatic.com/media/9c9493_5cc92ab8fc3c41ce9facc65d71651a5c~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
 
-&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_506dfb15d3f64ba6add66fd55cdb934a.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="34" name="stay in forest" tags="" position="528,774" size="100,100">finds herself to sometimes be able to be the fox, but people are still hunting a lot, so she has to be careful.
+&lt;audio src=&quot;https://static.wixstatic.com/mp3/3a9773_506dfb15d3f64ba6add66fd55cdb934a.mp3&quot; autoplay&gt;</tw-passagedata><tw-passagedata pid="34" name="stay in forest" tags="" position="528,774" size="100,100">You stay in the forest.
 
-she lives in the forest, alone, as the last fox left, but is somewhat happy she has her magic power. end :&lt;
+You find yourself capable of sometimes harnessing your magical energy and turning into your fox form, with more focus.
+
+But even the fox form has its drawbacks, as the humans are hunting magical beings to an increasing extent, so your fox form is incredibly vulnerable, so you must be careful.
+
+You live in the forest, as the last magical being who remains, living off the scraps of what the humans hunt. You are somewhat happy, that you have kept what remains of your magical power, even if it is not much at all.
 
 &lt;img src=&quot;https://static.wixstatic.com/media/9c9493_d28058f1fbbf44b9b2828c52b5612071~mv2.png&quot; width=&quot;800&quot; height=&quot;400&quot;&gt;
 
